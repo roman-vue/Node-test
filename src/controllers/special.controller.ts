@@ -6,6 +6,6 @@ export const special = (req: Request, res: Response) => {
 
 export const remove = (req: Request, res: Response) => {
   return res.json({ msg: `remove ${req.body.email}!` });
-};
+}; 
 
 
