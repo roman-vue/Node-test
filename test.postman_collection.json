@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "68404c11-ceed-4279-a966-fd2b95d1f5cf",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Node-Test",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZmY2YzdiYzg4OGYzMWViNGM4NjFlOCIsImVtYWlsIjoicm9tYW4zQGdtYWlsLmNvbSIsImlhdCI6MTYyNzM1MjI0OSwiZXhwIjoxNjI3NDM4NjQ5fQ.WeJfDnapQePDc3skwe2jnKYqDyOE5jz7OU1whcOumoU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"roman3@gmail.com\",\r\n    \"password\": \"hola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/special",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"special"
+					]
+				},
+				"description": "Autentificacion de usuarios con JWT"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"roman@gmail.com\",\r\n    \"password\": \"hola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"roman@gmail.com\",\r\n    \"password\": \"hola2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"roman3@gmail.com\",\r\n    \"password\": \"hola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"roman3@gmail.com\",\r\n    \"password\": \"hola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/authorization",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"roman3@gmail.com\",\r\n    \"password\": \"hola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/authorization",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"authorization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/special",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZmY2YzdiYzg4OGYzMWViNGM4NjFlOCIsImVtYWlsIjoicm9tYW4zQGdtYWlsLmNvbSIsImlhdCI6MTYyNzM1MjI0OSwiZXhwIjoxNjI3NDM4NjQ5fQ.WeJfDnapQePDc3skwe2jnKYqDyOE5jz7OU1whcOumoU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"roman3@gmail.com\",\r\n    \"password\": \"hola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/special",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"special"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
