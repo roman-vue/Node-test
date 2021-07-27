@@ -3,12 +3,19 @@ import passport from "passport";
 
 const router = Router();
 
-import { special } from "../controllers/special.controller";
+import { special, remove } from "../controllers/special.controller";
 
 router.get(
   "/special",
   passport.authenticate("jwt", { session: false }),
   special
+);
+
+router.delete(
+  "/special",
+  passport.authenticate("jwt", { session: false }),
+  remove
+  
 );
 
 
