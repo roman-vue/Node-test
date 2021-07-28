@@ -13,6 +13,12 @@ GET /special - ingresar al sistema (Ingresar token generado )
 
 DELETE /special/authorization - Eliminar Token
 
+PUT /users/:id
+
+Delete /users/:id
+
+GET /users/:id
+
 
 # Requeriments
 * Mongodb
