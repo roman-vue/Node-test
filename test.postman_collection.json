@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "a9b04f71-2f09-407f-bb2b-61d5af78c8c6",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/authorization",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mario@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/authorization",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"authorization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/6100abeec0ef9628fc750e52",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mario2@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/6100abeec0ef9628fc750e52",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"6100abeec0ef9628fc750e52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/6100abeec0ef9628fc750e52",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mario2@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/6100abeec0ef9628fc750e52",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"6100abeec0ef9628fc750e52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/6100abeec0ef9628fc750e52",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mario2@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/6100abeec0ef9628fc750e52",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"6100abeec0ef9628fc750e52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mario2@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/special",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMDBhYjUxYzBlZjk2MjhmYzc1MGU0YyIsImVtYWlsIjoibWFyaW9AZ21haWwuY29tIiwiaWF0IjoxNjI3NDM0MTgzLCJleHAiOjE2Mjc1MjA1ODN9.xlvlH_msjBXbuiSDs-10kT0Ee5Hg9VTT82pz44KiDFI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mario@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/special",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"special"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/special/authorization",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMDBhYjUxYzBlZjk2MjhmYzc1MGU0YyIsImVtYWlsIjoibWFyaW9AZ21haWwuY29tIiwiaWF0IjoxNjI3NDM0MTgzLCJleHAiOjE2Mjc1MjA1ODN9.xlvlH_msjBXbuiSDs-10kT0Ee5Hg9VTT82pz44KiDFI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mario@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/special/authorization",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"special",
+						"authorization"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
