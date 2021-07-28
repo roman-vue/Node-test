@@ -12,7 +12,7 @@ router.get(
 );
 
 router.delete(
-  "/special",
+  "/special/authorization",
   passport.authenticate("jwt", { session: false }),
   remove
   

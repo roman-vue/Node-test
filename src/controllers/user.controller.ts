@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import { request, Request, response, Response } from "express";
 import User, { IUser } from "../models/user";
 import jwt from "jsonwebtoken";
 import config from "../config/config";
@@ -48,11 +48,33 @@ export const signIn = async (
   if (isMatch) {
     return res.status(400).json({ token: createToken(user) });
   }
-   
-  
 
   return res.status(400).json({
     msg: "The email or password are incorrect"
   });
 };
 
+export async function update(req: Request, res: Response): Promise<Response> {
+  const { id } = req.params;
+  const { email, password } = req.body;
+  const updated = await User.findByIdAndUpdate(id, {
+      email,
+      password
+  });
+  return res.json({
+      message: 'Successfully updated',
+      updated
+  });
+};
+
+export async function deleteUser(req: Request, res: Response): Promise<Response>{
+  const {id}= req.params;
+  const remove = await User.findByIdAndRemove(id) as IUser;
+  return res.json({ message: 'User Deleted' , deleteUser });
+}  
+
+export async function userID(req: Request, res: Response): Promise<Response>{
+  const{id}= req.params;
+  const user_id = await User.findById(id)
+  return res.json({message: `${user_id}`})
+}
