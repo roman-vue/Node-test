@@ -1,6 +1,17 @@
-# Typescript REST API JWT
-this is a REST API example using Nodejs, Mongodb, Typescript and JsonWebtoken with Passport.
+Typescript REST API JWT
+Posman
 
-# Requeriments
-* Mongodb
-* Nodejs/npm
+POST /user - Agregar usuario
+
+POST /authorization - Genarar Token
+
+GET /special - ingresar al sistema (Ingresar token generado )
+
+image
+
+DELETE /special/authorization - Eliminar Token
+
+Requeriments
+Mongodb
+typescript
+Nodejs/npm
